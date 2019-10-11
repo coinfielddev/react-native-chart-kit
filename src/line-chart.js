@@ -1,18 +1,16 @@
 import React from "react";
 import { View } from "react-native";
-// import {
-//   Svg,
-//   Circle,
-//   Polygon,
-//   Polyline,
-//   Path,
-//   Rect,
-//   G,
-// } from "react-native-svg";
-import { Svg } from "expo";
+import {
+  Svg,
+  Circle,
+  Polygon,
+  Polyline,
+  Path,
+  Rect,
+  G,
+} from "react-native-svg";
 import AbstractChart from "./abstract-chart";
 
-const { Circle, Polygon, Polyline, Path, Rect, G } = Svg;
 class LineChart extends AbstractChart {
   getColor = (dataset, opacity) => {
     return (dataset.color || this.props.chartConfig.color)(opacity);
